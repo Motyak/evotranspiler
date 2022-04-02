@@ -1,0 +1,17 @@
+Entite<int,float,std::string>
+{
+    (int -> float)
+    { 
+        Entite = int + 100.f;
+    }
+ 
+    (float -> std::string)
+    {
+        Entite = "str" + std::to_string(float);
+    }
+ 
+    (std::string)
+    {
+        std::cout<<"evolution finished : "<<std::string<<std::endl;
+    }
+};
